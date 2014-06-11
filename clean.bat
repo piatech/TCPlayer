@@ -1,0 +1,1 @@
+del 20_Build\*.pdb /S

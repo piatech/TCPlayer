@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Version="0.1">
+  <Properties>
+    <Property Name="Title">Arduino Demo</Property>
+    <Property Name="Version">1.0</Property>
+    <Property Name="Author">Leonid Lezner</Property>
+    <Property Name="ShowProjectTree">True</Property>
+    <Property Name="ShowLog">True</Property>
+    <Property Name="VerboseLoad">True</Property>
+    <Property Name="WindowHeight">845</Property>
+    <Property Name="WindowWidth">1183</Property>
+    <Property Name="Description">Demo for Arduino</Property>
+  </Properties>
+  <Components>
+    <Component Type="Target" Ident="De.Piatech.Arduino">
+      <Properties>
+        <Property Name="Port">COM7</Property>
+      </Properties>
+    </Component>
+  </Components>
+  <Views>
+    <View Name="Home" Ident="De.Piatech.ArduinoDemo.UI.Home" Target="Main" AutoOpen="True" />
+    <View Name="Curves" Ident="De.Piatech.ArduinoDemo.UI.Curves" Target="Main" AutoOpen="False" />
+    <View Name="Service" Ident="De.Piatech.ArduinoDemo.UI.Service" Target="Main" AutoOpen="False" />
+  </Views>
+</Project>
