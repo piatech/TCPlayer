@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("TCPlayer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("PIATECH GmbH")]
+[assembly: AssemblyCompany("Leonid Lezner")]
 [assembly: AssemblyProduct("TCPlayer")]
-[assembly: AssemblyCopyright("Copyright ©  2013-2014 PIATECH GmbH")]
+[assembly: AssemblyCopyright("Copyright ©  2013-2014 Leonid Lezner")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
