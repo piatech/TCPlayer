@@ -226,11 +226,12 @@ namespace TCPlayer
         {
             RestoreWindowPosition();
 
-            await LoadProject();
+            if (await LoadProject())
+            {
+                SaveProjectNameToRecentProjects();
 
-            SaveProjectNameToRecentProjects();
-            
-            CreateUpdateCycleMenu();
+                CreateUpdateCycleMenu();
+            }
         }
 
         private void SaveProjectNameToRecentProjects()
@@ -293,7 +294,7 @@ namespace TCPlayer
             }
         }
 
-        private async Task LoadProject()
+        private async Task<bool> LoadProject()
         {
             LockUI();
 
@@ -318,9 +319,9 @@ namespace TCPlayer
                     }
                     else
                     {
-                        UnlockUI();
-                        Application.Exit();
-                        return;
+                        _isBusy = false;
+                        Close();
+                        return false;
                     }
                 }
 
@@ -349,10 +350,10 @@ namespace TCPlayer
             }
             catch (Exception ex)
             {
-                UnlockUI();
                 _logger.Log(ex);
+                _isBusy = false;
                 Close();
-                return;
+                return false;
             }
 
             UnlockUI();
@@ -368,6 +369,8 @@ namespace TCPlayer
             ShowMenuForCurrentView(subViewsTabControl, subViewToolStripMenuItem);
 
             UnlockUI();
+
+            return true;
         }
 
         private async Task AutoOpenAllViews()
@@ -502,7 +505,7 @@ namespace TCPlayer
 
         private async void TCPlayer_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (_forceClose)
+            if (_forceClose || !_project.IsLoaded)
             {
                 return;
             }

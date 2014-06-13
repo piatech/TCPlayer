@@ -136,7 +136,11 @@ namespace TCPlayer
                     try
                     {
                         LogList.Items.Add(logItem);
-                        LogList.EnsureVisible(LogList.Items.Count - 1);
+                        
+                        if (LogList.Items.Count > 1)
+                        {
+                            LogList.EnsureVisible(LogList.Items.Count - 1);
+                        }
                     }
                     catch(Exception)
                     {
