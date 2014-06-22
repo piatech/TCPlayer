@@ -12,15 +12,14 @@
     <Property Name="Description">Demo for Arduino</Property>
   </Properties>
   <Components>
-    <Component Type="Target" Ident="De.Piatech.Arduino">
+    <Component Type="Target" Ident="De.Piatech.ArduinoTarget">
       <Properties>
         <Property Name="Port">COM7</Property>
       </Properties>
     </Component>
   </Components>
   <Views>
-    <View Name="Home" Ident="De.Piatech.ArduinoDemo.UI.Home" Target="Main" AutoOpen="True" />
-    <View Name="Curves" Ident="De.Piatech.ArduinoDemo.UI.Curves" Target="Main" AutoOpen="False" />
-    <View Name="Service" Ident="De.Piatech.ArduinoDemo.UI.Service" Target="Main" AutoOpen="False" />
+    <View Name="Home" Ident="De.Piatech.ArduinoControlUI.Home" Target="Main" AutoOpen="True" />
+	<View Name="Service" Ident="De.Piatech.ArduinoControlUI.Service" Target="Main" AutoOpen="False" />
   </Views>
 </Project>

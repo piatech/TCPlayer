@@ -149,7 +149,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAi
-        GgAAAk1TRnQBSQFMAgEBBwEAAZABDAGQAQwBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        GgAAAk1TRnQBSQFMAgEBBwEAAaABDAGgAQwBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEYBgABGEgAAegB6gHtAbkBvwHTAdAB0wHcHuwD9pAAA/4D+AEsAUsBpQE1AV0BrwEh
         AUIBqwPcA9gD1APSA9ED0wPRA8sDzQPHA+xgAAHPAbcBqQHDAY4BaAHAAYsBZgG+AYgBZAG7AYUBYQG5
         AYMBXwG0AX4BXAGyAXwBWgGxAXsBWAGuAXkBVwGtAXYBVgGrAXUBVAGpAXMBUwGpAXEBUQHPAbcBqQMA
@@ -381,7 +381,7 @@
     <value>mainViewsTabControl</value>
   </data>
   <data name="&gt;&gt;mainViewsTabControl.Type" xml:space="preserve">
-    <value>TCPlayer.CustomControls.ViewsTabControl, TCPlayer, Version=1.0.5268.40134, Culture=neutral, PublicKeyToken=null</value>
+    <value>TCPlayer.CustomControls.ViewsTabControl, TCPlayer, Version=1.0.5286.15936, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mainViewsTabControl.Parent" xml:space="preserve">
     <value>splitContainerTreeContent.Panel2</value>
@@ -496,7 +496,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABe
-        FAAAAk1TRnQBSQFMAgEBBQEAAYgBCgGIAQoBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        FAAAAk1TRnQBSQFMAgEBBQEAAZgBCgGYAQoBEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEYBgABGN4AAfYB9wH2Ab0B1QG+AVIBmAFVAS0BfgExAS0BewExAVIBkQFVAb0B0gG+
         AfYB9wH2pQAB3QHpAd4BQgGWAUUBQgGgAVIBhwHKAZoBmwHTAasBmwHSAasBgwHHAZYBPQGXAUwBQQGF
         AUQB3QHmAd2fAAHdAeoB3wEsAZIBMQFtAb4BgwGoAdsBtQGHAcwBmAFmAbwBfQFkAboBfAGGAcsBmAGl
@@ -730,7 +730,7 @@
     <value>subViewsTabControl</value>
   </data>
   <data name="&gt;&gt;subViewsTabControl.Type" xml:space="preserve">
-    <value>TCPlayer.CustomControls.ViewsTabControl, TCPlayer, Version=1.0.5268.40134, Culture=neutral, PublicKeyToken=null</value>
+    <value>TCPlayer.CustomControls.ViewsTabControl, TCPlayer, Version=1.0.5286.15936, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;subViewsTabControl.Parent" xml:space="preserve">
     <value>splitContainerMainSub.Panel2</value>

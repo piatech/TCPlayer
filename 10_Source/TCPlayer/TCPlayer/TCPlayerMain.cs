@@ -66,6 +66,8 @@ namespace TCPlayer
         {
             InitializeComponent();
 
+            this.Text = _applicationName;
+
             RedirectConsole();
 
             AlertBox.UIContext = SynchronizationContext.Current;
@@ -901,7 +903,9 @@ namespace TCPlayer
                     onlineIndicator = " [" + Resources.Messages.Online + "]";
                 }
 
-                title = string.Format("{0}{2}{3} - {1}", _project.Properties["Title"], _applicationName, changesIndicator, onlineIndicator);
+                _applicationName = _project.Properties["Title"].ToString();
+
+                title = string.Format("{0}{1}{2}", _applicationName, changesIndicator, onlineIndicator);
             }
             else
             {
