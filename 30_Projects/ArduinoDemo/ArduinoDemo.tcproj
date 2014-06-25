@@ -6,7 +6,7 @@
     <Property Name="Author">Leonid Lezner</Property>
     <Property Name="ShowProjectTree">True</Property>
     <Property Name="ShowLog">True</Property>
-    <Property Name="VerboseLoad">True</Property>
+    <Property Name="VerboseLoad">False</Property>
     <Property Name="WindowHeight">845</Property>
     <Property Name="WindowWidth">1183</Property>
     <Property Name="Description">Demo for Arduino</Property>
@@ -20,6 +20,6 @@
   </Components>
   <Views>
     <View Name="Home" Ident="De.Piatech.ArduinoControlUI.Home" Target="Main" AutoOpen="True" />
-	<View Name="Service" Ident="De.Piatech.ArduinoControlUI.Service" Target="Main" AutoOpen="False" />
+    <View Name="Service" Ident="De.Piatech.ArduinoControlUI.Service" Target="Main" AutoOpen="False" />
   </Views>
 </Project>

@@ -38,30 +38,67 @@ namespace TCPlayer.Project
 {
     public class TCProject : IConfigurable, ISerializable
     {
+        /// <summary>
+        /// Project version. If not equal to the version in the project file
+        /// convert the content to the newer version
+        /// </summary>
         private const string _PROJECT_VERSION = "0.1";
-
+        
+        /// <summary>
+        /// Folder name for components
+        /// </summary>
         private const string _COMPONENTS_DIR = "Components";
         
+        /// <summary>
+        /// Folder name for views
+        /// </summary>
         private const string _VIEWS_DIR = "Views";
 
+        /// <summary>
+        /// This components should exist in every project
+        /// </summary>
         private string[] _mandatoryComponents = { "Target" };
 
+        /// <summary>
+        /// Properties of the project's object
+        /// </summary>
         private PropertySet _properties;
 
+        /// <summary>
+        /// All components in the project
+        /// </summary>
         private DynComponentSet _components;
         
+        /// <summary>
+        /// All views in the project
+        /// </summary>
         private DynViewSet _views;
         
+        /// <summary>
+        /// Project has some changes and can be saved
+        /// </summary>
         private bool _hasChanges = false;
         
+        /// <summary>
+        /// Project is loaded
+        /// </summary>
         private bool _loaded = false;
         
+        /// <summary>
+        /// Project is online (= connected to the target)
+        /// </summary>
         private bool _isOnline = false;
         
+        /// <summary>
+        /// File path to the project
+        /// </summary>
         private string _projectFilePath;
 
         public SynchronizationContext UIContext { get; set; }
 
+        /// <summary>
+        /// Public accessor for properties
+        /// </summary>
         public PropertySet Properties
         {
             get
@@ -74,6 +111,9 @@ namespace TCPlayer.Project
             }
         }
 
+        /// <summary>
+        /// Public accessor for components
+        /// </summary>
         public DynComponentSet ComponentSet
         {
             get
@@ -86,6 +126,9 @@ namespace TCPlayer.Project
             }
         }
 
+        /// <summary>
+        /// Public accessor for views
+        /// </summary>
         public DynViewSet ViewSet
         {
             get
@@ -153,16 +196,9 @@ namespace TCPlayer.Project
             }
         }
 
-        public bool HasParameters
-        {
-            get { return ComponentSet["ParameterManager"] != null; }
-        }
-
-        public bool HasSignals
-        {
-            get { return ComponentSet["SignalManager"] != null; }
-        }
-
+        /// <summary>
+        /// Returns the human readable address of the target
+        /// </summary>
         public string TargetsFullAddress
         {
             get
@@ -176,11 +212,6 @@ namespace TCPlayer.Project
                     return "";
                 }
             }
-        }
-
-        public TCProject()
-        {
-
         }
 
         private void CheckComponents()

@@ -163,10 +163,10 @@
     <value>Lade Maske '{0}'...</value>
   </data>
   <data name="Offline" xml:space="preserve">
-    <value>Nicht verbunden</value>
+    <value>Offline</value>
   </data>
   <data name="Online" xml:space="preserve">
-    <value>Verbunden</value>
+    <value>Online</value>
   </data>
   <data name="PluginTypeNotFoundInAssembly" xml:space="preserve">
     <value>Plugin type '{0}' not found in '{1}'</value>
